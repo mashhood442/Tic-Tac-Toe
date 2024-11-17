@@ -1,0 +1,70 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #614385, #516395);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #f9f9f9;
+}
+
+.top {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #f9f9f9;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.App {
+  text-align: center;
+}
+
+.board-row {
+  display: flex;
+  justify-content: center;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: #3a3b3c;
+  border: 2px solid #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  color: #f9f9f9;
+}
+
+.square:hover {
+  background-color: #6c63ff;
+  transform: scale(1.1);
+  border-color: #fff;
+}
+
+.status {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #eee;
+}
+
+@media (max-width: 600px) {
+  .square {
+    width: 80px;
+    height: 80px;
+    font-size: 20px;
+  }
+  .top {
+    font-size: 36px;
+  }
+  .status {
+    font-size: 18px;
+  }
+}
